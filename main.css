@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    height: 100vh;
+    font-size: 16px;
+    background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+
+}
+
+.wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container{
+    width: 70vmin;
+    width: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.users{
+    display: flex;
+    justify-content: space-between;
+    color: palevioletred;
+}
+.user__1, .user__2{
+    padding: 10px;
+    border: 1px solid palevioletred;
+    margin-bottom: 10px;
+}
+
+.btn_option{
+    background: antiquewhite;
+    height: 22vmin;
+    width: 22vmin;
+    border-radius: 10px;
+    font-size: 12vmin;
+    color: #ffafbd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+.replay{
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: black;
+    color: rgb(209, 129, 25);
+    border: none;
+    margin: 20px auto;
+    display: block;
+    text-transform: capitalize;
+}
+
+.popup{
+    background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+    font-size: 12vwin;
+
+}
+
+#restart{
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: rgb(209, 93, 149);
+    border-radius: 0.2em;
+}
+
+#message{
+    color: rgb(21, 19, 16);
+    text-align: center;
+    font-size: 1em;
+}
+
+.popup.hide{
+    display: none;
+}
